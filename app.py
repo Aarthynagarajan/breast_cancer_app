@@ -14,37 +14,32 @@ st.markdown(
     """
     <style>
     .stApp {
-        background: linear-gradient(135deg, #f5f7fb 0%, #ffffff 60%);
+        background: radial-gradient(circle at top left, #edf2ff 0%, #f8fafc 40%, #ffffff 100%);
     }
     .main {
-        background-color: rgba(0,0,0,0);
-    }
-    .title-text {
-        font-size: 32px;
-        font-weight: 700;
-        color: #1f2933;
-    }
-    .subtitle-text {
-        font-size: 14px;
-        color: #4b5563;
+        background-color: transparent;
     }
     .result-box {
         padding: 18px 20px;
         border-radius: 10px;
         border: 1px solid #e5e7eb;
-        background-color: #ffffff;
-        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+        background-color: #ffffffee;
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
     }
-    .footer-text {
-        text-align: center;
-        color: #9ca3af;
-        font-size: 12px;
-        margin-top: 24px;
+    .title-text {
+        font-size: 32px;
+        font-weight: 700;
+        color: #111827;
+    }
+    .subtitle-text {
+        font-size: 14px;
+        color: #4b5563;
     }
     </style>
     """,
     unsafe_allow_html=True,
 )
+
 
 # ---------------- Load model and scaler ----------------
 # Make sure scaler.pkl and breast_cancer_model.pkl are in same folder as this file
